@@ -1,0 +1,12 @@
+<h2>Livros em Destaque</h2>
+<div class="book-list">
+  
+  <div class="book" *ngFor="let livro of books">
+    <img [src]="livro.image">
+    <strong></strong>
+    <h2>{{livro.title}}</h2>
+    <p><strong>Autor: {{livro.author}}</strong></p>
+    <p><strong>Valor: {{livro.price}}</strong></p>  
+  <button>Comprar</button>
+  </div>
+</div>

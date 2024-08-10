@@ -10,6 +10,7 @@ import { BookDetailComponent } from './book-detail/book-detail.component';
 import { CartComponent } from './cart/cart.component';
 import { FooterComponent } from './footer/footer.component';
 import { SearchBarComponent } from './search-bar/search-bar.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { SearchBarComponent } from './search-bar/search-bar.component';
     BookDetailComponent,
     CartComponent,
     FooterComponent,
-    SearchBarComponent
+    SearchBarComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

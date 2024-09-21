@@ -1,13 +1,15 @@
 <div class="login-container">
-   
+  <form [formGroup]="formulario">
       <div>
-        <label for="username">Username:</label><input>
+        
+        <label for="username">Username:</label><input formControlName="login">
       
       </div>
       <div>
-        <label for="password">Password:</label><input>
+        <label for="password">Password:</label><input formControlName="senha">
      
       </div>
       <button type="submit">Login</button>
+    </form>
   </div>
   

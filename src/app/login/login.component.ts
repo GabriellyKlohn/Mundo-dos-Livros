@@ -1,5 +1,6 @@
 
 import { Component } from '@angular/core';
+import { FormControl, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-login',
@@ -7,12 +8,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent {
-  username: string = '';
-  password: string = '';
-
-  onSubmit() {
-    // Aqui você pode adicionar a lógica de autenticação
-    console.log('Username:', this.username);
-    console.log('Password:', this.password);
+formulario = new FormGroup({
+  login:new FormControl(''),
+  senha:new FormControl('')
+})
   }
-}
+

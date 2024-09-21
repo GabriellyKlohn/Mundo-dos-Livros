@@ -1,0 +1,100 @@
+<app-menu></app-menu>
+
+<form class="form-container">
+    <div class="form-group">
+        <label for="first-name">Nome</label>
+        <input type="text" id="first-name" name="firstName" required>
+    </div>
+    <div class="form-group">
+        <label for="last-name">Sobrenome</label>
+        <input type="text" id="last-name" name="lastName">
+    </div>
+    <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" >
+    </div>
+    <div class="form-group">
+        <label for="password">Senha</label>
+        <input type="password" id="password" name="password" >
+    </div>
+    <div class="form-group">
+        <label for="phone">Telefone</label>
+        <input type="tel" id="phone" name="phone">
+    </div>
+    <div class="form-group">
+        <label for="address">Endereço</label>
+        <input type="text" id="address" name="address">
+    </div>
+    <div class="form-group">
+        <label for="dob">Data de Nascimento</label>
+        <input type="date" id="dob" name="dob">
+    </div>
+    <div class="form-group">
+        <button type="submit">Enviar</button>
+    </div>
+</form>
+
+<h3 class="mt-5">Relatório de Usuários</h3>
+<table class="table table-striped mt-4">
+    <thead>
+        <tr>
+            <th>Ação</th>
+            <th>Id</th>
+            <th>Nome</th>
+            <th>Sobrenome</th>
+            <th>Telefone</th>
+            <th>Email</th>
+            <th>Tipo</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                <button class="bnt bnt-warning bnt-sm">Editar</button>
+                <button class="bnt bnt-danger bnt-sm">Excluir</button>
+            </td>
+            <td>1</td>
+            <td>João</td>
+            <td>Silva</td>
+            <td>123456789</td>
+            <td>joaocom</td>
+            <td>Admin</td>
+        </tr>
+        <tr>
+            <td>
+                <button class="bnt bnt-warning bnt-sm">Editar</button>
+                <button class="bnt bnt-danger bnt-sm">Excluir</button>
+            </td>
+            <td>2</td>
+            <td>Alan</td>
+            <td>Bento</td>
+            <td>987654321</td>
+            <td>alanbentocom</td>
+            <td>Usuário</td>
+        </tr>
+        <tr>
+            <td>
+                <button class="bnt bnt-warning bnt-sm">Editar</button>
+                <button class="bnt bnt-danger bnt-sm">Excluir</button>
+            </td>
+            <td>3</td>
+            <td>Ana</td>
+            <td>Julia</td>
+            <td>1122334455</td>
+            <td>anajucom</td>
+            <td>Usuário</td>
+        </tr>
+        <tr>
+            <td>
+                <button class="bnt bnt-warning bnt-sm">Editar</button>
+                <button class="bnt bnt-danger bnt-sm">Excluir</button>
+            </td>
+            <td>4</td>
+            <td>Levi</td>
+            <td>Bento</td>
+            <td>135798642</td>
+            <td>levibentocom</td>
+            <td>Usuário</td>
+        </tr>
+    </tbody>
+</table>

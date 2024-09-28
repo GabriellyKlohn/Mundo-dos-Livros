@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px; /* Aumenta a largura máxima */
+    margin: 40px auto; /* Alinha a margem superior para mais perto do topo */
+    background: white;
+    padding: 30px; /* Aumenta o padding interno */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px; /* Adiciona espaço abaixo do título */
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px; /* Aumenta o padding */
+    margin-bottom: 15px; /* Adiciona espaço entre os inputs */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 12px; /* Aumenta o padding do botão */
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #294aa5;
+}
+
+
+
+.relatorio {
+    margin-top: 30px; /* Aumenta o espaço superior do relatório */
+    padding: 15px; /* Aumenta o padding do relatório */
+    background: #e9ecef;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}

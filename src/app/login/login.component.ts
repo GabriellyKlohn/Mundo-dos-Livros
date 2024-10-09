@@ -28,8 +28,8 @@ onLogin() {
           dados.senha
       ).subscribe({
           next: (res) => {
-            if(res.status==200)
-              this.router.navigate(['/nome'])
+            if(res.status==200){
+              this.router.navigate(['/nome'])}
               console.log(res);
           }
       });

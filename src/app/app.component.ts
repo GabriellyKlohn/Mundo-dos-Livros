@@ -17,3 +17,4 @@ export class HeaderComponent {
     // Aqui você pode adicionar a lógica para redirecionar para a página de login, abrir um modal, etc.
   }
 }
+

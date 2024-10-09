@@ -1,36 +1,37 @@
 <app-menu></app-menu>
 
-<form class="form-container">
+<form class="form-container" [formGroup]="formulario">
     <div class="form-group">
-        <label for="first-name">Nome</label>
-        <input type="text" id="first-name" name="firstName" required>
+        <label for="first-name">nome</label>
+        <input type="text" id="first-name" formControlName="nome">
     </div>
     <div class="form-group">
-        <label for="last-name">Sobrenome</label>
-        <input type="text" id="last-name" name="lastName">
+        <label for="last-name">sobrenome</label>
+        <input type="text" id="last-name" formControlName="sobrenome">
     </div>
     <div class="form-group">
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" >
+        <label for="email">email</label>
+        <input type="email" id="email" formControlName="email" >
     </div>
     <div class="form-group">
-        <label for="password">Senha</label>
-        <input type="password" id="password" name="password" >
+        <label for="password">senha</label>
+        <input type="password" id="password" formControlName="password" >
     </div>
     <div class="form-group">
-        <label for="phone">Telefone</label>
-        <input type="tel" id="phone" name="phone">
+        <label for="phone">telefone</label>
+        <input type="tel" id="phone" formControlName="phone">
     </div>
     <div class="form-group">
-        <label for="address">Endereço</label>
-        <input type="text" id="address" name="address">
+        <label for="address">endereco</label>
+        <input type="text" id="address" formControlName="address">
     </div>
     <div class="form-group">
-        <label for="dob">Data de Nascimento</label>
-        <input type="date" id="dob" name="dob">
+        <label for="dob">dtnascimento</label>
+        <input type="date" id="dob" formControlName="dob">
     </div>
     <div class="form-group">
-        <button type="submit">Enviar</button>
+        <button (click)="onSave()">Enviar</button>
+        <button (click)="onCancelar()">Cancelar</button>
     </div>
 </form>
 

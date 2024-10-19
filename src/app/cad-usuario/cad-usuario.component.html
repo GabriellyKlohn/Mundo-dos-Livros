@@ -15,23 +15,30 @@
     </div>
     <div class="form-group">
         <label for="password">senha</label>
-        <input type="password" id="password" formControlName="password" >
+        <input type="password" id="password" formControlName="senha" >
     </div>
     <div class="form-group">
         <label for="phone">telefone</label>
-        <input type="tel" id="phone" formControlName="phone">
+        <input type="tel" id="phone" formControlName="telefone">
     </div>
     <div class="form-group">
         <label for="address">endereco</label>
-        <input type="text" id="address" formControlName="address">
+        <input type="text" id="address" formControlName="endereco">
     </div>
     <div class="form-group">
         <label for="dob">dtnascimento</label>
-        <input type="date" id="dob" formControlName="dob">
+        <input type="date" id="dob" formControlName="dtnascimento">
     </div>
     <div class="form-group">
         <button (click)="onSave()">Enviar</button>
         <button (click)="onCancelar()">Cancelar</button>
+    </div>
+    <div>
+        <label>Tipo</label>
+        <select>
+            <option>Selecione</option>
+            <option *ngFor="let tipo of arrTipos" [value]="tipo.id_tipo">{{tipo.descricao}}</option>
+        </select>
     </div>
 </form>
 

@@ -15,10 +15,13 @@ export class CadUsuarioComponent {
     email: new FormControl(''),
     senha: new FormControl(''),
     telefone: new FormControl(''),
-    valor: new FormControl(''),
+    login: new FormControl(''),
     endereco: new FormControl(''),
     dtnascimento: new FormControl(''),
+    tipo: new FormControl(''),
   });
+
+mensagem:string = '';
 
   constructor(
     private cadUsuarioService: CadusuarioService,
@@ -35,7 +38,8 @@ export class CadUsuarioComponent {
     //abre uma conexão asíncrona com o serviço
     this.cadUsuarioService.salvar(dados).subscribe({
       next: (res) => {
-        console.log(res);
+        console.log(res)
+        this.mensagem = 'Usuário adicionado com sucesso!';
       },
       error: (error) => {
         console.log(error);

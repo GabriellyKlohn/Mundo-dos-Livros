@@ -10,7 +10,7 @@ export class CadusuarioService {
   constructor(private http:HttpClient) {}
   public salvar (dados:any):Observable<any>{
     return this.http.post(
-      'http://local host:3000/usuario/add',
+      'http://localhost:3000/usuario/add',
       {dados},{observe:'response'}
     )
   }
